@@ -7,10 +7,10 @@ function App() {
   
 
   return (
-    <BrowserRouter>
-      <Navbar/>
+    <BrowserRouter basename="/cryptoflow"> {/* ← Agrega basename */}
+      <Navbar />
       <Routes>
-        <Route path="/cryptoflow" element={<Index/>}/>
+        <Route path="/" element={<Index />} />
       </Routes>
     </BrowserRouter>
   )
