@@ -15,7 +15,7 @@ export interface PricingPlan {  // ✅ Con export
   name: string;
   tagline?: string;
   description: string;
-  
+  buttonText: string;
   price: {
     monthly: number;
     annual: number;

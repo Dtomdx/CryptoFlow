@@ -121,7 +121,7 @@ export const PRICINGPLANS = [
     name: 'Starter',
     tagline: 'Perfect for beginners',
     description: 'Start your trading journey with essential tools and basic market insights.',
-    
+    buttonText: 'Get Started',
     price: {
       monthly: 29,
       annual: 290, // $29 * 12 * 0.17 ≈ $290 (17% descuento)
@@ -179,7 +179,7 @@ export const PRICINGPLANS = [
     
     cta: {
       text: 'Start Free Trial',
-      variant: 'outline',
+      variant: 'outline' as const,
       href: '/signup?plan=starter',
     },
     
@@ -199,7 +199,7 @@ export const PRICINGPLANS = [
     name: 'Pro Trader',
     tagline: 'For serious traders',
     description: 'Advanced tools and analytics for professional cryptocurrency trading.',
-    
+    buttonText: 'Get Started',
     price: {
       monthly: 99,
       annual: 950, // $99 * 12 * 0.20 ≈ $950 (20% descuento)
@@ -282,7 +282,7 @@ export const PRICINGPLANS = [
     
     cta: {
       text: 'Try Pro Free for 14 Days',
-      variant: 'primary',
+      variant: 'primary' as const,
       href: '/signup?plan=pro',
       onClick: () => {
         // Analytics tracking
@@ -307,7 +307,7 @@ export const PRICINGPLANS = [
     name: 'Enterprise',
     tagline: 'For institutions & teams',
     description: 'Complete trading suite with white-label solutions and enterprise-grade security.',
-    
+    buttonText: 'Get Started',
     price: {
       monthly: 299,
       annual: 2868, // $299 * 12 * 0.20 ≈ $2,868 (20% descuento)
@@ -383,7 +383,7 @@ export const PRICINGPLANS = [
     
     cta: {
       text: 'Contact Sales',
-      variant: 'secondary',
+      variant: 'secondary' as const,
       href: '/contact/enterprise',
       onClick: () => {
         // Analytics tracking

@@ -32,7 +32,8 @@ export const useCarousel = ({
 }: UseCarouselOptions) => {
     const [currentIndex, setCurrentIndex] = useState(initialIndex)
     const [isAutoPlaying, setIsAutoPlaying] = useState(enableAutoPlay)
-    const intervalRef = useRef<NodeJS.Timeout | null>(null)
+    //const intervalRef = useRef<NodeJS.Timeout | null>(null)
+    const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
     //Calculo util para ui
     const canGoNext = loop || currentIndex < totalItems - 1;
